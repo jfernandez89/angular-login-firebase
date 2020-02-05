@@ -1,1 +1,1 @@
-# login-firebase
+# angular-login-firebase
