@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { UsuarioModel } from '../../models/usuario.model';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
+  usuario: UsuarioModel = new UsuarioModel();
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(loginForm: NgForm){
+
+    loginForm.invalid ? console.log('Login fallido') : console.log(loginForm);
+
   }
 
 }
