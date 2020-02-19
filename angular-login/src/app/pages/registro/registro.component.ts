@@ -15,7 +15,6 @@ export class RegistroComponent implements OnInit {
 
   ngOnInit() {
     this.usuario = new UsuarioModel();
-    this.usuario.email = "jfernandez89@gmail.com"
   }
 
   // Pasamos el formulario como parametro desde la template html
